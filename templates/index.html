@@ -7,6 +7,9 @@
 {% block content %}
 <div class="container-fluid">
     <h2> Home page </h2>
+    {% for message in get_flashed_messages() %}
+        {{ message }}
+    {% endfor %}
 </div>
 {% endblock %}
 
